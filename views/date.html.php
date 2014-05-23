@@ -1,6 +1,6 @@
 <?php
     include('header.html.php');
-    
+
     $files = array_slice(scandir($logdir),2);
     foreach($files as $i => $file) {
         if($file == $logprefix.'.log.'.$date) {
@@ -31,12 +31,12 @@
         </ul>
     </div>
     <ul class="lines">
-    <? 
+    <?
         $i = 0;
         foreach ($lines as $line_num => $line) {
             echo line_as_html($line, $i, $channel);
             $i++;
-        } 
+        }
     ?>
     </ul>
     <ul class="nav" id="urlnav">
@@ -49,5 +49,5 @@
         <? } ?>
         <li class="github"><a href="http://github.com/KevBurnsJr/irc-log-viewer" title="Fork me on GitHub" target="_blank">Fork me on GitHub</a>
     </ul>
-    
+
 <? include('footer.html.php'); ?>

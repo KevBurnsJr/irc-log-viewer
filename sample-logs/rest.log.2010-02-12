@@ -7,7 +7,7 @@
 [06:51] <algermissen> ah - good idea. So I do not need to keep the chat open to get the transcripts :-)
 [06:51] <KevBurnsJr> Now you have RestBot
 [06:57] algermissen (algermiss@p54905732.dip.t-dialin.net) left #rest.
-[08:05] KevBurnsJr (KevBurnsJr@c-69-181-187-21.hsd1.ca.comcast.net) left irc: 
+[08:05] KevBurnsJr (KevBurnsJr@c-69-181-187-21.hsd1.ca.comcast.net) left irc:
 [08:22] algermissen (~algermiss@p54905732.dip.t-dialin.net) joined #rest.
 [12:28] <mikekelly> :-)
 [12:28] <mikekelly> cool
@@ -81,7 +81,7 @@
 [16:09] <mikekelly> o.O
 [16:12] <mamund> mikekelly: i admire jj dubary's passionate skepticism about Fielding's work and REST in general, but i don't share it.
 [16:12] <mamund> s/dubary/dubray
-[16:24] <mamund> KevBurnsJr: thanks for setting up the RestBot! 
+[16:24] <mamund> KevBurnsJr: thanks for setting up the RestBot!
 [16:25] <jsled> he does't seem to be around.
 [16:25] #rest: mode change '+o jsled' by ChanServ!ChanServ@services.
 [16:25] Topic changed on #rest by jsled!jsled@pdpc/supporter/bronze/jsled: Representational State Transfer | http://en.wikipedia.org/wiki/Representational_State_Transfer | http://tech.groups.yahoo.com/group/rest-discuss/ | logged channel: http://rest.hackyhack.net/
@@ -92,7 +92,7 @@
 [16:59] <mikekelly> :-)
 [17:47] bradley-holt (~chatzilla@65-183-135-35-dhcp.burlingtontelecom.net) joined #rest.
 [17:57] KevBurnsJr (~kevburnsj@c-67-161-65-81.hsd1.ca.comcast.net) joined #rest.
-[18:02] <KevBurnsJr> jsled: no off-record for the moment.  
+[18:02] <KevBurnsJr> jsled: no off-record for the moment.
 [18:02] <KevBurnsJr> This is an old eggdrop I reappropriated.
 [18:03] <KevBurnsJr> I probably don't need to tell you that <font face='tahoma'> is an artifact of some teeny irc log viewer app I scraped of the web and manhandled into place.
 [18:07] <KevBurnsJr> I'll make it a weekend project to clean up the log viewer.
@@ -114,7 +114,7 @@
 [20:00] <mamund> algermissen: we might be talking abt diff things. i change stuff in my server apps quite frequently w/o breaking my clients
 [20:00] <algermissen> i find it to be very amazing if you approach rest from the application state POV and not from the interaction/hypermedia POV)
 [20:01] <algermissen> yes, but you cannot change in the same way an OO interface can change. That thing can completely change. I can even disappear. A steady state resource should noy doasppear but be coooool
-[20:02] <mamund> not sure i follow this last part WRT OO 
+[20:02] <mamund> not sure i follow this last part WRT OO
 [20:02] <algermissen> OO is far less constrained when it comes to change
 [20:02] <algermissen> nothing in OO says so much about what connot be done when evolving the API as REST does
 [20:03] <mamund> hmmm.. i guess that's true. i am not up on my OO principles.
@@ -125,9 +125,9 @@
 [20:04] <algermissen> juggle that in your head - amazing actually
 [20:05] <mamund> i suspect that is (at least in part)  because REST is an arch style and OO is a programming style.
 [20:08] <mamund> but - if i follow you - your point is about the constraints entworked apps (REST arch'ed) have on the public interface, right?
-[20:12] <mamund> what i find challenging is identifying the public interface for HTTP/REST apps.... 
+[20:12] <mamund> what i find challenging is identifying the public interface for HTTP/REST apps....
 [20:12] <mamund> it's not just the list of callable methods...
-[20:13] <mamund> the control data and the body are also part of this interface. esp. in the case of the media-type... 
+[20:13] <mamund> the control data and the body are also part of this interface. esp. in the case of the media-type...
 [20:14] <mamund> that is why changing some aspects of media-type or control data will result in breaking the client and are, therefore, changage that are 'not allowed'
 [20:17] <algermissen> Well, if you change the media type semantics in an incompatible way you need anew media type
 [20:19] <algermissen> what I find interesting is that REST explicitly addresses the temporal aspect of an API. REST says some things pertaining to evolution. No other style or technique does that
@@ -200,7 +200,7 @@
 [22:52] <algermissen> knowing more about the URI space == more visible
 [22:53] Action: mamund chimes in: client-selected can be more accurate, but it requires extra trips.
 [22:53] <mikekelly> you don't know more you know less
-[22:55] <mamund> mikekelly: to your point, according to HTTP/1.1 spec, you can use other headers, even non-header info when doing server-driven conneg 
+[22:55] <mamund> mikekelly: to your point, according to HTTP/1.1 spec, you can use other headers, even non-header info when doing server-driven conneg
 [22:55] <mikekelly> yeah ok good :))
 [22:55] <mamund> well, outside "request header fields" is the quote: http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html#sec12.1
 [22:55] <mikekelly> hence definition of Vary mechanism
@@ -209,7 +209,7 @@
 [23:00] <mamund> i don't get that "client-specific media-types" what's that about?
 [23:03] <mikekelly> @AndrewWahbe "What you want is: application/<type-of-client>+xml" do you mean application/ria+xml?
 [23:06] <mamund> yeah - that's why i asked. seems a peculiar notion to me.
-[23:07] <mamund> also, i quoted the GET side-effect thing since ian robinson and i had an email discuss on that today. 
+[23:07] <mamund> also, i quoted the GET side-effect thing since ian robinson and i had an email discuss on that today.
 [23:15] <algermissen> gave up on search for a quote by roy on visibility
 [23:16] <mamund> algermissen: what were you looking for (search-wise?)
 [23:16] <algermissen> "negotiated resource" visibility PUT
@@ -217,7 +217,7 @@
 [23:17] <algermissen> I hate it that rest and fielding are such common terms in non REST web pages :-)
 [23:17] <algermissen> some stuff is really hard to find
 [23:18] <mamund> this thread maybe: http://ftp.ics.uci.edu/pub/ietf/http/hypermail/1996q2/0603.html
-[23:18] <algermissen> the other day I scanned the whole of the FoRK archives for older RESt stuff - massive amount of work 
+[23:18] <algermissen> the other day I scanned the whole of the FoRK archives for older RESt stuff - massive amount of work
 [23:19] <algermissen> no - but still good
 [23:19] <mamund> algermissen: might need a new repository that offers not only searching, but auto-tagging of key words for quite cross-index
 [23:19] <mamund> that thread has some nice stuff, IIRC

@@ -14,7 +14,7 @@
             if(strpos($file, $logprefix.'.log') > -1) {
                 $w = number_format(filesize($logdir."/".$file)/$maxsize*100,1);
                 $filedate = substr($file, strlen($logprefix)+5);
-                ?> 
+                ?>
         <a href="<?=($baserel.$filedate)?>.html"><?=$filedate?></a>
         <div class='bar'><div style='width:<?=$w?>%'>&nbsp;</div></div>
                 <?
@@ -23,4 +23,4 @@
     ?>
     </div>
 
-<? include('footer.html.php'); ?>    
+<? include('footer.html.php'); ?>

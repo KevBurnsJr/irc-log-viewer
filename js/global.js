@@ -15,13 +15,13 @@ $(document).ready(function(){
             $('#urlnav li.permalink a').attr('href',hash);
         }
     }
-    
-    $('ul.lines li').hover(function(){ 
-        $(this).toggleClass('hover'); 
+
+    $('ul.lines li').hover(function(){
+        $(this).toggleClass('hover');
     });
     $('ul.lines li').click(function(e){
         if($(e.target).is("a")){ return; }
-        $(this).toggleClass('selected'); 
+        $(this).toggleClass('selected');
         var all_selected = $(this).parent().find('.selected');
         if(all_selected.length) {
             var sel_ids = [];
